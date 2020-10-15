@@ -66,6 +66,10 @@ strong {
   background-size: cover;
   background-position: center;
   padding: 0 .5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
 }
 
 /*** Main Content Section ***/
@@ -75,24 +79,11 @@ strong {
 }
 
 /* select everything that's a direct child of .intro and .main-content */
-/* Use without the additional div containers */
-/* .intro > *,
+.intro > *,
 .main-content > * {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-} */
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.container-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 50vh;
 }
 
 
@@ -125,7 +116,4 @@ strong {
     justify-content: center;
   }
 
-  .container-intro {
-    height: 100%;
-  }
 }
